@@ -1,14 +1,20 @@
-# spring-boot-api-rest
+# Spring Boot REST API
 
-By developing this project, I learned how to:
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/douglasdotv/spring-boot-api-rest/blob/master/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/douglasdotv/spring-boot-api-rest/blob/master/README.pt-br.md)
 
-- Start a new project with Spring Initializr
-- Deal with the basics of a Spring Boot project configuration
-- Persist data using Spring Data JPA
-- Map entities
-- Deal with controllers and repositories
-- Apply the DTO pattern and why it's important
-- Validate data
-- Use Lombok to reduce the amount of boilerplate code
-- Perform migrations via Flyway
-- Build a REST API with basic CRUD operations
+This project is a simple RESTful API for managing a list of doctors. It provides the following endpoints:
+
+- POST /doctors: register a new doctor
+- GET /doctors: list all doctors (the list can be paginated by passing size and sort query parameters)
+- PUT /doctors: update an existing doctor
+- DELETE /doctors/{id}: remove a doctor by ID
+
+The following technologies were used:
+
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- MySQL
+- Project Lombok
+- Bean Validation
